@@ -4,12 +4,11 @@ let helloWorld = function () {
     return "Hello, World!";
 }
 
-function sayHello(input) {
-    if (input === "Alex") {
-        return "Hello, Alex!";
-    } else if (input === "Pat") {
-        return "Hello, Pat!";
+
+function sayHello(name) {
+    if (typeof name != "string") {
+        return `Hello, Jane!`
     } else {
-        return "Hello, Jane!";
+        return `Hello, ${name}!`
     }
 }
