@@ -82,10 +82,10 @@ describe("isEven", function() {
     it("should return true if 2 is passed (string or integer)", function () {
         expect(isEven(2)).toBe(true)
     });
-    it("should return true if 2 is passed (string or integer)", function () {
+    it("should return true if -4 is passed (string or integer)", function () {
         expect(isEven(-4)).toBe(true)
     });
-    it("should return true if 2 is passed (string or integer)", function () {
+    it("should return true if 3 is passed (string or integer)", function () {
         expect(isEven(3)).toBe(false)
     });
 })
