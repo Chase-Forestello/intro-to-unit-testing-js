@@ -39,5 +39,15 @@ let isFive = function (input) {
 //isEven function
 
 let isEven = function (input) {
-    return input % 2 === 0
+    if (typeof input === "boolean") {
+        return false
+    } else {
+        return input % 2 === 0
+    }
+}
+
+//isVowel function
+
+let isVowel = function (input) {
+
 }
