@@ -33,8 +33,8 @@ let sayHello = function (name) {
 // isFive function
 
 let isFive = function (input) {
-    return parseInt(input) === 5
-}
+    return parseInt(input) === 5;
+};
 
 //isEven function
 
@@ -42,12 +42,12 @@ let isEven = function (input) {
     if (typeof input === "boolean") {
         return false
     } else {
-        return input % 2 === 0
+        return input % 2 === 0;
     }
-}
+};
 
 //isVowel function
-
+let vowels = "a, A, e, E, i, I, o, O, u, U,";
 let isVowel = function (input) {
-
+    return vowels.includes(input)
 }

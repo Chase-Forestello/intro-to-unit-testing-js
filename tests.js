@@ -55,24 +55,24 @@ describe("sayHello", function () {
 
 // Unit tests for isFive function
 
-describe("isFive", function() {
+describe("isFive", function () {
     it("should be a defined function", function () {
         expect(typeof isFive).toBe("function")
     });
-    it("should return true when passed 5" , function () {
+    it("should return true when passed 5", function () {
         expect(isFive(5)).toBe(true)
     });
     it("should return a boolean no matter the input", function () {
         expect(isFive()).toBe(typeof input === "boolean")
     });
-    it("should return true if the string: '5' is passed", function() {
+    it("should return true if the string: '5' is passed", function () {
         expect(isFive("5")).toBe(true)
     });
 })
 
 // Unit tests for isEven function
 
-describe("isEven", function() {
+describe("isEven", function () {
     it("should be a defined function", function () {
         expect(typeof isEven).toBe("function")
     });
@@ -116,8 +116,56 @@ describe("isEven", function() {
 // isVowel("banana") returns false
 // isVowel() returns false
 
-describe("isVowel", function() {
+describe("isVowel", function () {
     it("should be a defined function", function () {
         expect(typeof isVowel).toBe("function")
-    })
+    });
+    it("should return true if passed the string 'a'", function () {
+        expect(isVowel("a")).toBe(true)
+    });
+    it("should return true if passed the string 'A'", function() {
+        expect(isVowel("A")).toBe(true)
+    });
+    it("should return true if passed the string 'y'", function() {
+        expect(isVowel("y")).toBe(false)
+    });
+    it("should return true if passed the number 4", function() {
+        expect(isVowel(4)).toBe(false)
+    });
+    it("should return false if true is passed", function () {
+        expect(isVowel(true)).toBe(false)
+    });
+    it("should return false if false is passed", function () {
+        expect(isVowel(false)).toBe(false)
+    });
+    it("should return false if passed the string 'banana'", function() {
+        expect(isVowel("banana")).toBe(false)
+    });
+    it("should return false if passed with no variable", function() {
+        expect(isVowel()).toBe(false)
+    });
+    it("should return true if passed the string 'e'", function() {
+        expect(isVowel("e")).toBe(true)
+    });
+    it("should return true if passed the string 'E'", function() {
+        expect(isVowel("E")).toBe(true)
+    });
+    it("should return true if passed the string 'i'", function() {
+        expect(isVowel("i")).toBe(true)
+    });
+    it("should return true if passed the string 'I'", function() {
+        expect(isVowel("I")).toBe(true)
+    });
+    it("should return true if passed the string 'o'", function() {
+        expect(isVowel("o")).toBe(true)
+    });
+    it("should return true if passed the string 'O'", function() {
+        expect(isVowel("O")).toBe(true)
+    });
+    it("should return true if passed the string 'u'", function() {
+        expect(isVowel("u")).toBe(true)
+    });
+    it("should return true if passed the string 'U'", function() {
+        expect(isVowel("U")).toBe(true)
+    });
 })
