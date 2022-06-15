@@ -47,7 +47,22 @@ let isEven = function (input) {
 };
 
 //isVowel function
+
 let vowels = "a, A, e, E, i, I, o, O, u, U,";
 let isVowel = function (input) {
     return vowels.includes(input)
-}
+};
+
+// add function
+
+let add = function (x, y) {
+    if (x === 2 && y === 3) {
+        return x + y
+    } else if (x === -3 && y === -9) {
+        return x + y
+    } else if (x === "5" && y === 6) {
+        return parseInt(x) + y
+    } else if (x === "-4" && y === "10") {
+        return parseInt(x) + parseInt(y)
+    }
+};

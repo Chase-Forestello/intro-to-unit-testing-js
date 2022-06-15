@@ -103,18 +103,9 @@ describe("isEven", function () {
     it("should return false when called without an argument", function () {
         expect(isEven()).toBe(false)
     });
-})
+});
 
 // Unit tests for isVowel
-
-//isVowel always returns a boolean
-// isVowel("a") returns true
-// isVowel("A") returns true
-// isVowel("y") returns false
-// isVowel(4) returns false
-// isVowel(true) or isVowel(false) both return false
-// isVowel("banana") returns false
-// isVowel() returns false
 
 describe("isVowel", function () {
     it("should be a defined function", function () {
@@ -123,13 +114,13 @@ describe("isVowel", function () {
     it("should return true if passed the string 'a'", function () {
         expect(isVowel("a")).toBe(true)
     });
-    it("should return true if passed the string 'A'", function() {
+    it("should return true if passed the string 'A'", function () {
         expect(isVowel("A")).toBe(true)
     });
-    it("should return true if passed the string 'y'", function() {
+    it("should return true if passed the string 'y'", function () {
         expect(isVowel("y")).toBe(false)
     });
-    it("should return true if passed the number 4", function() {
+    it("should return true if passed the number 4", function () {
         expect(isVowel(4)).toBe(false)
     });
     it("should return false if true is passed", function () {
@@ -138,34 +129,69 @@ describe("isVowel", function () {
     it("should return false if false is passed", function () {
         expect(isVowel(false)).toBe(false)
     });
-    it("should return false if passed the string 'banana'", function() {
+    it("should return false if passed the string 'banana'", function () {
         expect(isVowel("banana")).toBe(false)
     });
-    it("should return false if passed with no variable", function() {
+    it("should return false if passed with no variable", function () {
         expect(isVowel()).toBe(false)
     });
-    it("should return true if passed the string 'e'", function() {
+    it("should return true if passed the string 'e'", function () {
         expect(isVowel("e")).toBe(true)
     });
-    it("should return true if passed the string 'E'", function() {
+    it("should return true if passed the string 'E'", function () {
         expect(isVowel("E")).toBe(true)
     });
-    it("should return true if passed the string 'i'", function() {
+    it("should return true if passed the string 'i'", function () {
         expect(isVowel("i")).toBe(true)
     });
-    it("should return true if passed the string 'I'", function() {
+    it("should return true if passed the string 'I'", function () {
         expect(isVowel("I")).toBe(true)
     });
-    it("should return true if passed the string 'o'", function() {
+    it("should return true if passed the string 'o'", function () {
         expect(isVowel("o")).toBe(true)
     });
-    it("should return true if passed the string 'O'", function() {
+    it("should return true if passed the string 'O'", function () {
         expect(isVowel("O")).toBe(true)
     });
-    it("should return true if passed the string 'u'", function() {
+    it("should return true if passed the string 'u'", function () {
         expect(isVowel("u")).toBe(true)
     });
-    it("should return true if passed the string 'U'", function() {
+    it("should return true if passed the string 'U'", function () {
         expect(isVowel("U")).toBe(true)
     });
-})
+});
+
+// Unit tests for add
+// Assert that add:
+// add(2, 3) returns 5
+// add(-3, -9) returns -12
+// add("5", 6) returns 11
+// add("-4", "10") returns 6
+// add("banana", "split") returns NaN
+// add(2, "apples") returns NaN
+// add() returns NaN
+// Start with the smallest tests first.
+// Write just enough code to green the test
+// Build up functionality one small piece at a time.
+// If any input is not a number, return NaN
+// Refactor, if possible
+// Repeat until the tests are robust and the function works as intended.
+// Commit your work to git and push to GitHub.
+
+describe("add", function () {
+    it("should be a defined function", function () {
+        expect(typeof add).toBe("function")
+    });
+    it("should return 5 if passed the numbers 2 and 3", function () {
+        expect(add(2, 3)).toBe(5)
+    });
+    it("should return -12 if passed the numbers -3 and -9", function () {
+        expect(add(-3,-9)).toBe(-12)
+    })
+    it("should return 11 if passed the string '5' and the number 6", function () {
+        expect(add("5",6)).toBe(11)
+    })
+    it("should return 6 if passed the string '-4' and the number '10'", function () {
+        expect(add("-4","10")).toBe(6)
+    })
+});
